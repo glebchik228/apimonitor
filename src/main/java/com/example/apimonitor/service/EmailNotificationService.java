@@ -36,4 +36,3 @@ public class EmailNotificationService implements NotificationService {
         mailSender.send(message);
     }
 }
-
