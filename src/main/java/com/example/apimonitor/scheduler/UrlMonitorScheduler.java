@@ -21,7 +21,7 @@ public class UrlMonitorScheduler {
         this.notificationService = notificationService;
     }
 
-    @Scheduled(fixedDelay = 5000)
+    @Scheduled(fixedDelay = 5000) // TODO: not const delay
     public void checkUrls() {
         for (MonitoredUrl url : monitorService.getUrls()) {
             try {
